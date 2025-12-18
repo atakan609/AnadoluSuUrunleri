@@ -9,19 +9,19 @@ const products = [
         id: 1,
         name: 'Atlantic Salmon',
         description: 'Sustainably raised in the icy waters of the North Atlantic. Rich flavor, firm texture.',
-        image: '/images/salmon.png',
+        image: `${import.meta.env.BASE_URL}images/salmon.png`,
     },
     {
         id: 2,
         name: 'Pacific Oysters',
         description: 'Harvested daily. Sweet, crisp, and briny flavor with a clean finish.',
-        image: '/images/oysters.png',
+        image: `${import.meta.env.BASE_URL}images/oysters.png`,
     },
     {
         id: 3,
         name: 'King Crab Legs',
         description: 'The crowning jewel of the sea. Sweet, tender white meat with a delicate flavor.',
-        image: '/images/salmon.png', // Placeholder reuse until requested otherwise or additional gen
+        image: `${import.meta.env.BASE_URL}images/salmon.png`, // Placeholder reuse until requested otherwise or additional gen
     }
 ];
 

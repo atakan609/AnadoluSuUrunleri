@@ -35,7 +35,7 @@ const Hero = () => {
                 ref={heroRef}
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/images/hero.png')",
+                    backgroundImage: `url(${import.meta.env.BASE_URL}images/hero.png)`,
                 }}
             >
                 <div className="absolute inset-0 bg-navy-900/20 mix-blend-multiply"></div>

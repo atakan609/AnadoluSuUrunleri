@@ -30,7 +30,7 @@ const Diver = () => {
             y: '-25vh',
             rotation: 40,
             ease: 'sine.inOut',
-            duration: .8
+            duration: 1
         })
             .to(diverRef.current, {
                 rotation: 70,
@@ -48,7 +48,7 @@ const Diver = () => {
                 x: '-30vw',
                 rotation: 30,
                 ease: 'sine.in',
-                duration: 0
+                duration: 1
             })
             // 4. Final glid to far left
             .to(diverRef.current, {
@@ -59,14 +59,14 @@ const Diver = () => {
             });
 
         // Bubbles
-        gsap.to(bubbleRef.current, {
+        /* gsap.to(bubbleRef.current, {
             y: -80,
             opacity: 0,
             duration: 2.5,
             repeat: -1,
             stagger: 0.2,
             ease: "power1.out",
-        });
+        }); */
 
     }, []);
 
@@ -79,14 +79,15 @@ const Diver = () => {
                 ref={diverRef}
                 className="absolute top-[60%] left-[32%] w-[32rem] md:w-[40rem] mix-blend-screen"
             >
-                <img src="/images/diver.png" alt="Diver" className="w-full opacity-90 brightness-75 contrast-125 transform rotate-90" />
+                <img src={`${import.meta.env.BASE_URL}images/diver.png`} alt="Diver" className="w-full opacity-90 brightness-75 contrast-125 transform rotate-90" />
 
-                {/* Bubbles */}
+                {/* Bubbles 
                 <div ref={bubbleRef} className="absolute -top-10 right-10 flex flex-col gap-3">
                     {[1, 2, 3].map(i => (
                         <div key={i} className={`w-${i === 1 ? '3' : '2'} h-${i === 1 ? '3' : '2'} rounded-full border border-white/60`}></div>
                     ))}
-                </div>
+                </div> */}
+                
             </div>
         </div>
     );
