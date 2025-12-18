@@ -44,10 +44,10 @@ const Hero = () => {
             </div>
 
             {/* İçerik */}
-            <div className="relative z-30 container mx-auto px-6 h-full flex flex-col justify-center items-center text-center">
+            <div className="relative z-30 container mx-auto h-full pt-40 flex flex-col justify-center items-center text-center">
                 <h1
                     ref={textRef}
-                    className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 uppercase tracking-wider"
+                    className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 mt-8 md:mt-12 uppercase tracking-wider"
                 >
                     Anadolu Su<span className="text-cyan-900 block md:inline"> Ürünlerİ</span>
                 </h1>
