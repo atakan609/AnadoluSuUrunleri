@@ -72,7 +72,7 @@ const Diver = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="fixed inset-0 pointer-events-none z-5 overflow-hidden">
+        <div ref={containerRef} className="fixed inset-0 pointer-events-none z-[5] overflow-hidden">
 
 
             {/* Dalgıç görünüm penceresine göre hareket eder ancak kaydırma ile kontrol edilir */}

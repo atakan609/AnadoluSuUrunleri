@@ -24,7 +24,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <section id="contact" className="py-24 bg-navy-800 relative">
+        <section id="contact" className="py-24 relative">
             <div className="container mx-auto px-6 relative z-30">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

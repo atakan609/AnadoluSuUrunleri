@@ -64,7 +64,7 @@ const Products = () => {
     }, []);
 
     return (
-        <section id="products" ref={sectionRef} className="py-24 bg-navy-800 relative">
+        <section id="products" ref={sectionRef} className="py-24 relative">
             <div className="container mx-auto px-6 relative z-30">
                 <div className="text-center mb-16">
                     <h2 ref={titleRef} className="text-4xl md:text-5xl font-bold text-white mb-4">

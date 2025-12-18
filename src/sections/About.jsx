@@ -25,7 +25,7 @@ const About = () => {
     }, []);
 
     return (
-        <section id="about" className="py-64 bg-navy-900 relative overflow-hidden">
+        <section id="about" className="py-64 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-30 flex flex-col md:flex-row items-center gap-16">
                 <div className="md:w-1/2" ref={contentRef}>
                     <h4 className="text-cyan-600 font-bold uppercase tracking-widest mb-2">Hikayemiz</h4>

@@ -17,7 +17,7 @@ function App() {
       <SmoothScroll />
       <Diver />
       <Navbar />
-      <main className="relative z-[-1]">
+      <main className="relative">
         <Hero />
         <About />
         <MisyonVizyon />

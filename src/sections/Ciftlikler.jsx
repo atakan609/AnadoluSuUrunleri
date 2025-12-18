@@ -28,7 +28,7 @@ const Ciftlikler = () => {
     }, []);
 
     return (
-        <section id="ciftlikler" className="py-32 bg-navy-950 relative">
+        <section id="ciftlikler" className="py-32 relative">
             <div className="container mx-auto px-6 relative z-30" ref={ref}>
                 <h4 className="text-cyan-600 font-bold uppercase tracking-widest mb-2">Saha Ağı</h4>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Çiftliklerimiz</h2>
