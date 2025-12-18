@@ -29,8 +29,8 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="relative h-screen w-full overflow-hidden">
-            {/* Background Image */}
+        <section className="relative z-0 h-screen w-full overflow-hidden">
+            {/* Arka Plan Görseli */}
             <div
                 ref={heroRef}
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -39,29 +39,29 @@ const Hero = () => {
                 }}
             >
                 <div className="absolute inset-0 bg-navy-900/20 mix-blend-multiply"></div>
-                {/* Gradient transition to base color */}
+                {/* Temel renge geçiş gradyanı */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-navy-900"></div>
             </div>
 
-            {/* Content */}
-            <div className="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center items-center text-center">
+            {/* İçerik */}
+            <div className="relative z-30 container mx-auto px-6 h-full flex flex-col justify-center items-center text-center">
                 <h1
                     ref={textRef}
                     className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 uppercase tracking-wider"
                 >
-                    Taste the <span className="text-cyan block md:inline">Deep Ocean</span>
+                    Anadolu Su<span className="text-cyan-900 block md:inline"> Ürünlerİ</span>
                 </h1>
                 <p
                     ref={subRef}
                     className="text-lg md:text-2xl text-text-light max-w-2xl font-light tracking-wide leading-relaxed"
                 >
-                    Discover the pristine quality of sustainable seafood, harvested from the coldest, purest waters.
+                    Sürdürülebilir deniz ürünlerinin saf kalitesini keşfedin; en soğuk ve en temiz sulardan hasat edilir.
                 </p>
 
-                {/* Scroll Indicator */}
+                {/* Kaydırma Göstergesi */}
                 <div className="absolute bottom-10 animate-bounce">
-                    <div className="w-6 h-10 border-2 border-cyan rounded-full flex justify-center">
-                        <div className="w-1 h-2 bg-cyan rounded-full mt-2"></div>
+                    <div className="w-6 h-10 border-2 border-cyan-600 rounded-full flex justify-center">
+                        <div className="w-1 h-2 bg-cyan-600 rounded-full mt-2"></div>
                     </div>
                 </div>
             </div>

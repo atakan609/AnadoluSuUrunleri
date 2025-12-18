@@ -8,6 +8,8 @@ import About from './sections/About';
 import Products from './sections/Products';
 import Contact from './sections/Contact';
 import Diver from './components/Diver';
+import MisyonVizyon from './sections/MisyonVizyon';
+import Ciftlikler from './sections/Ciftlikler';
 
 function App() {
   return (
@@ -15,9 +17,11 @@ function App() {
       <SmoothScroll />
       <Diver />
       <Navbar />
-      <main>
+      <main className="relative z-[-1]">
         <Hero />
         <About />
+        <MisyonVizyon />
+        <Ciftlikler />
         <Products />
         <Contact />
       </main>

@@ -13,7 +13,7 @@ const Diver = () => {
     useEffect(() => {
 
 
-        // Diver Animation path
+        // Dalgıç animasyon yolu
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: "body",
@@ -23,34 +23,35 @@ const Diver = () => {
             }
         });
 
-        // Animate the diver down
-        // 1. Initial dip to right
+        // Dalgıcı aşağı hareketlendir
+        // 1. İlk sağa dalış
         tl.to(diverRef.current, {
             x: '30vw',
             y: '-25vh',
             rotation: 40,
             ease: 'sine.inOut',
-            duration: 1
+            opacity: 1,
+            duration: 1.4
         })
             .to(diverRef.current, {
                 rotation: 70,
                 ease: 'sine.inOut',
                 duration: .8
             })
-            // 2. Swing back to left
+            // 2. Sola geri sallanma
             .to(diverRef.current, {
                 x: '-30vw',
                 ease: 'sine.inOut',
                 duration: .8
             },"-=.6")
-            // 3. Swing to right again
+            // 3. Yeniden sağa sallanma
             .to(diverRef.current, {
                 x: '-30vw',
                 rotation: 30,
                 ease: 'sine.in',
                 duration: 1
             })
-            // 4. Final glid to far left
+            // 4. Son olarak uzağa sola kayma
             .to(diverRef.current, {
                 x: '0vw',
                 rotation: -60,
@@ -58,7 +59,7 @@ const Diver = () => {
                 duration: 1
             });
 
-        // Bubbles
+        // Kabarcıklar
         /* gsap.to(bubbleRef.current, {
             y: -80,
             opacity: 0,
@@ -71,15 +72,15 @@ const Diver = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="fixed inset-0 pointer-events-none z-40 overflow-hidden">
+        <div ref={containerRef} className="fixed inset-0 pointer-events-none z-5 overflow-hidden">
 
 
-            {/* Diver moves relative to viewport but controlled by scroll */}
+            {/* Dalgıç görünüm penceresine göre hareket eder ancak kaydırma ile kontrol edilir */}
             <div
                 ref={diverRef}
-                className="absolute top-[60%] left-[32%] w-[32rem] md:w-[40rem] mix-blend-screen"
+                className="absolute top-[60%] left-[37vw] w-[32rem] md:w-[40rem] opacity-0 mix-blend-normal pointer-events-none"
             >
-                <img src={`${import.meta.env.BASE_URL}images/diver.png`} alt="Diver" className="w-full opacity-90 brightness-75 contrast-125 transform rotate-90" />
+                <img src={`${import.meta.env.BASE_URL}images/diver.png`} alt="Dalgıç" className="w-full brightness-90 contrast-110 transform rotate-90" />
 
                 {/* Bubbles 
                 <div ref={bubbleRef} className="absolute -top-10 right-10 flex flex-col gap-3">
