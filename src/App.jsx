@@ -5,7 +5,6 @@ import SmoothScroll from './components/SmoothScroll';
 
 import Hero from './sections/Hero';
 import About from './sections/About';
-import Products from './sections/Products';
 import Contact from './sections/Contact';
 import Diver from './components/Diver';
 import MisyonVizyon from './sections/MisyonVizyon';
@@ -13,7 +12,7 @@ import Ciftlikler from './sections/Ciftlikler';
 
 function App() {
   return (
-    <div className="min-h-screen relative bg-navy-900">
+    <div className="min-h-screen relative bg-sikiminkeyfi-dark">
       <SmoothScroll />
       <Diver />
       <Navbar />
@@ -22,7 +21,6 @@ function App() {
         <About />
         <MisyonVizyon />
         <Ciftlikler />
-        <Products />
         <Contact />
       </main>
       <Footer />
@@ -31,3 +29,4 @@ function App() {
 }
 
 export default App;
+

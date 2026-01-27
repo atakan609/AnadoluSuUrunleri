@@ -15,20 +15,19 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Hakkımızda', href: '#about' },
-        { name: 'Ürünler', href: '#products' },
         { name: 'Sürdürülebİlİrlİk', href: '#sustainability' },
         { name: 'İletİşİm', href: '#contact' },
     ];
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-navy-400 backdrop-blur-md shadow-lg py-4' : 'py-6'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'backdrop-blur-md shadow-lg shadow-cyan-700/30 py-4 bg-cyan-500/30' : 'py-6'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <a href="#" className="flex items-center gap-3">
                     <div className="relative flex items-center">
                         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                             <div className="w-12 h-12 bg-cyan-600/20 rounded-full blur-xl" />
                         </div>
-                        <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Anadolu Su Ürünleri" className="w-10 h-10 object-contain relative z-10" />
+                        <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Anadolu Su Ürünleri" className="size-12 object-contain relative z-10" />
                     </div>
                     <span className="text-2xl font-bold text-cyan-600 tracking-wider">Anadolu Su <span className="text-white">Ürünleri</span></span>
                 </a>
@@ -39,7 +38,7 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-text-light hover:text-cyan-600 transition-colors text-sm font-medium uppercase tracking-widest"
+                            className="text-white hover:text-cyan-600 transition-colors text-sm font-medium uppercase tracking-widest"
                         >
                             {link.name}
                         </a>

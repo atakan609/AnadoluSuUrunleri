@@ -7,18 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: {
-          900: '#0a192f',
-          800: '#112240',
-          700: '#233554',
-        },
-        cyan: {
-          DEFAULT: '#64ffda',
-          dim: 'rgba(100, 255, 218, 0.1)',
+        sikiminkeyfi: {
+          light: '#154D71',
+          dark: '#154D71',
         },
         text: {
           light: '#ccd6f6',
           dim: '#8892b0',
+        },
+        navy: {
+          700: '#1e3a5f',
+          800: '#152d4a',
+          900: '#0d1b2a',
         }
       },
       fontFamily: {

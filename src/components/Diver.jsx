@@ -31,26 +31,19 @@ const Diver = () => {
             rotation: 40,
             ease: 'sine.inOut',
             opacity: 1,
-            duration: 1.4
+            duration: .5
         })
             .to(diverRef.current, {
-                rotation: 70,
+                rotation: 90,
                 ease: 'sine.inOut',
-                duration: .8
+                duration: .6
             })
             // 2. Sola geri sallanma
             .to(diverRef.current, {
-                x: '-30vw',
+                x: '0vw',
                 ease: 'sine.inOut',
-                duration: .8
-            },"-=.6")
-            // 3. Yeniden sağa sallanma
-            .to(diverRef.current, {
-                x: '-30vw',
-                rotation: 30,
-                ease: 'sine.in',
-                duration: 1
-            })
+                duration: .4
+            }, "-=.5")
             // 4. Son olarak uzağa sola kayma
             .to(diverRef.current, {
                 x: '0vw',
@@ -58,16 +51,6 @@ const Diver = () => {
                 ease: 'sine.in',
                 duration: 1
             });
-
-        // Kabarcıklar
-        /* gsap.to(bubbleRef.current, {
-            y: -80,
-            opacity: 0,
-            duration: 2.5,
-            repeat: -1,
-            stagger: 0.2,
-            ease: "power1.out",
-        }); */
 
     }, []);
 
@@ -78,17 +61,10 @@ const Diver = () => {
             {/* Dalgıç görünüm penceresine göre hareket eder ancak kaydırma ile kontrol edilir */}
             <div
                 ref={diverRef}
-                className="absolute top-[60%] left-[37vw] w-[32rem] md:w-[40rem] opacity-0 mix-blend-normal pointer-events-none"
+                className="absolute top-[60%] left-[32vw] w-[32rem] md:w-[40rem] opacity-100 mix-blend-normal pointer-events-none"
             >
                 <img src={`${import.meta.env.BASE_URL}images/diver.png`} alt="Dalgıç" className="w-full brightness-90 contrast-110 transform rotate-90" />
 
-                {/* Bubbles 
-                <div ref={bubbleRef} className="absolute -top-10 right-10 flex flex-col gap-3">
-                    {[1, 2, 3].map(i => (
-                        <div key={i} className={`w-${i === 1 ? '3' : '2'} h-${i === 1 ? '3' : '2'} rounded-full border border-white/60`}></div>
-                    ))}
-                </div> */}
-                
             </div>
         </div>
     );
