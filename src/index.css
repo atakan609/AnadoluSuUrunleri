@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&subset=latin,latin-ext&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -25,4 +25,89 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-navy-800;
+}
+
+/* Text Outline */
+.text-outline {
+  text-shadow: 
+    -0.5px -0.5px 0 #144a6c9d,
+    0.5px -0.5px 0 #144a6c9d,
+    -0.5px 0.5px 0 #144a6c9d,
+    0.5px 0.5px 0 #144a6c9d;
+}
+
+.hover\:text-outline:hover {
+  text-shadow: 
+    -0.2px -0.2px 2px #144a6cff,
+    0.2px -0.2px 2px #144a6cff,
+    -0.2px 0.2px 2px #144a6cff,
+    0.2px 0.2px 2px #144a6cff;
+}
+
+.text-outline-strong {
+ text-shadow: 
+    -0.5px -0.5px 2px #0c3650,
+    0.5px -0.5px 2px #0c3650,
+    -0.5px 0.5px 2px #0c3650,
+    0.5px 0.5px 2px #0c3650;
+}
+
+/* Underwater Wave Gradient - Continuous Background */
+/* Underwater Wave Gradient - Continuous Background */
+.wave-gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 50%, #1a5c85 0%, #0f4262 60%, #08263a 100%);
+}
+
+.wave-gradient-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(at 12% 88%, rgba(31, 139, 198, 0.25) 0px, transparent 45%),
+    radial-gradient(at 85% 5%, rgba(100, 200, 255, 0.15) 0px, transparent 40%),
+    radial-gradient(at 55% 45%, rgba(21, 90, 135, 0.25) 0px, transparent 55%),
+    radial-gradient(at 75% 75%, rgba(10, 50, 80, 0.4) 0px, transparent 65%),
+    radial-gradient(at 25% 15%, rgba(31, 139, 198, 0.2) 0px, transparent 35%),
+    radial-gradient(at 62% 28%, rgba(56, 168, 219, 0.15) 0px, transparent 50%),
+    radial-gradient(at 35% 65%, rgba(21, 90, 135, 0.25) 0px, transparent 40%),
+    radial-gradient(at 2% 45%, rgba(15, 66, 98, 0.3) 0px, transparent 30%),
+    radial-gradient(at 92% 55%, rgba(56, 168, 219, 0.15) 0px, transparent 45%),
+    radial-gradient(at 45% 95%, rgba(10, 30, 50, 0.3) 0px, transparent 50%);
+  pointer-events: none;
+}
+
+/* Deep Ocean Gradient (Scroll Effect Overlay) */
+.wave-gradient-deep {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 50%, #0f3045 0%, #081e2b 60%, #020b12 100%);
+  opacity: 0; /* Starts invisible */
+  pointer-events: none;
+}
+
+.wave-gradient-deep::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(at 20% 80%, rgba(10, 40, 60, 0.4) 0px, transparent 40%),
+    radial-gradient(at 80% 20%, rgba(15, 50, 70, 0.3) 0px, transparent 40%),
+    radial-gradient(at 50% 50%, rgba(5, 20, 30, 0.5) 0px, transparent 60%);
+  pointer-events: none;
 }

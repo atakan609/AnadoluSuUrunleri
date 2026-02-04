@@ -15,21 +15,57 @@ const Navbar = () => {
 
     const navLinks = [
         { name: 'Hakkımızda', href: '#about' },
-        { name: 'Sürdürülebİlİrlİk', href: '#sustainability' },
-        { name: 'İletİşİm', href: '#contact' },
+        { name: 'Değerlerimiz', href: '#misyon-vizyon' },
+        { name: 'Çiftliklerimiz', href: '#ciftlikler' },
+        { name: 'İletişim', href: '#contact' },
     ];
 
+    const handleNavClick = (e, href) => {
+        e.preventDefault();
+
+        if (href === '#') {
+            if (window.lenis) window.lenis.scrollTo(0);
+            else window.scrollTo({ top: 0, behavior: 'smooth' });
+            setIsOpen(false);
+            return;
+        }
+
+        const element = document.querySelector(href);
+        if (!element) return;
+
+        let offset = 0;
+        const elemHeight = element.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        // Element ekrana sığıyorsa ortala
+        if (elemHeight < windowHeight) {
+            offset = -1 * ((windowHeight - elemHeight) / 2);
+        }
+
+        if (window.lenis) {
+            window.lenis.scrollTo(href, { offset });
+        } else {
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition + offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+        setIsOpen(false);
+    };
+
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'backdrop-blur-md shadow-lg shadow-cyan-700/30 py-4 bg-cyan-500/30' : 'py-6'}`}>
+        <nav className={`fixed w-full z-50 transition-all overflow-hidden duration-300 ${scrolled ? 'backdrop-blur-md shadow-lg shadow-backgroundMain-400/30 py-4 bg-backgroundMain-400/30' : 'py-6'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <a href="#" className="flex items-center gap-3">
+                <a href="#" className="flex items-center gap-3" onClick={(e) => handleNavClick(e, '#')}>
                     <div className="relative flex items-center">
                         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                             <div className="w-12 h-12 bg-cyan-600/20 rounded-full blur-xl" />
                         </div>
                         <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Anadolu Su Ürünleri" className="size-12 object-contain relative z-10" />
                     </div>
-                    <span className="text-2xl font-bold text-cyan-600 tracking-wider">Anadolu Su <span className="text-white">Ürünleri</span></span>
+                    <span className="text-3xl font-semibold text-sky-400 tracking-wider text-outline">Anadolu Su <span className="text-white">Ürünleri</span></span>
                 </a>
 
                 {/* Desktop Menu */}
@@ -38,14 +74,12 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-white hover:text-cyan-600 transition-colors text-sm font-medium uppercase tracking-widest"
+                            className="text-white hover:text-sky-400 transition-colors text-lg font-normal  tracking-wide hover:text-outline"
+                            onClick={(e) => handleNavClick(e, link.href)}
                         >
                             {link.name}
                         </a>
                     ))}
-                    <button className="border border-cyan-600 text-cyan-600 px-6 py-2 rounded hover:bg-cyan-600/10 transition-colors uppercase text-sm tracking-widest">
-                        Sipariş Ver
-                    </button>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -66,7 +100,7 @@ const Navbar = () => {
                                 key={link.name}
                                 href={link.href}
                                 className="text-text-light hover:text-cyan-600 text-lg py-2 border-b border-navy-700 last:border-0"
-                                onClick={() => setIsOpen(false)}
+                                onClick={(e) => handleNavClick(e, link.href)}
                             >
                                 {link.name}
                             </a>

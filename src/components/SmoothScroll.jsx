@@ -16,6 +16,8 @@ const SmoothScroll = () => {
             touchMultiplier: 2,
         });
 
+        window.lenis = lenis;
+
         lenis.on('scroll', ScrollTrigger.update);
 
         const update = (time) => {

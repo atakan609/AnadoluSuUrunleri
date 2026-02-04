@@ -36,20 +36,20 @@ const Hero = () => {
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
                     backgroundImage: `url(${import.meta.env.BASE_URL}images/hero.png)`,
+                    maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%)',
+                    WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)'
                 }}
             >
-                <div className="absolute inset-0 bg-navy-900/20 mix-blend-multiply"></div>
-                {/* Temel renge geçiş gradyanı */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-navy-900"></div>
+                <div className="absolute inset-0 bg-backgroundMain-600/20 mix-blend-multiply"></div>
             </div>
 
             {/* İçerik */}
             <div className="relative z-30 container mx-auto h-full pt-40 flex flex-col justify-center items-center text-center">
                 <h1
                     ref={textRef}
-                    className="text-5xl md:text-7xl lg:text-8xl font-serif italic font-bold text-white mb-6 mt-8 md:mt-12 uppercase tracking-wider"
+                    className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 mt-8 md:mt-12 uppercase tracking-wider "
                 >
-                    Anadolu Su<span className="text-cyan-900 block md:inline"> Ürünlerİ</span>
+                    <span className="text-sky-400">Anadolu Su</span><span className=" block md:inline"> Ürünlerİ</span>
                 </h1>
                 <p
                     ref={subRef}
@@ -60,8 +60,8 @@ const Hero = () => {
 
                 {/* Kaydırma Göstergesi */}
                 <div className="absolute bottom-10 animate-bounce">
-                    <div className="w-6 h-10 border-2 border-cyan-600 rounded-full flex justify-center">
-                        <div className="w-1 h-2 bg-cyan-600 rounded-full mt-2"></div>
+                    <div className="w-6 h-10 border-2 border-sky-400 rounded-full flex justify-center">
+                        <div className="w-1 h-2 bg-sky-400 rounded-full mt-2"></div>
                     </div>
                 </div>
             </div>

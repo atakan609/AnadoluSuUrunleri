@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const MisyonVizyon = () => {
+const MissionVision = () => {
     const ref = useRef(null);
 
     useEffect(() => {
@@ -27,7 +27,7 @@ const MisyonVizyon = () => {
     return (
         <section id="misyon-vizyon" className="py-32 relative">
             <div className="container mx-auto px-6 relative z-30" ref={ref}>
-                <h4 className="text-cyan-600 font-bold uppercase tracking-widest mb-2">Değerlerimiz</h4>
+                <h4 className="text-sky-400 font-bold uppercase tracking-widest mb-2">Değerlerimiz</h4>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Misyonumuz & Vizyonumuz</h2>
 
                 <div className="grid md:grid-cols-2 gap-8 mt-6">
@@ -53,4 +53,4 @@ const MisyonVizyon = () => {
     );
 };
 
-export default MisyonVizyon;
+export default MissionVision;

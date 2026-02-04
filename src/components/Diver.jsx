@@ -28,25 +28,39 @@ const Diver = () => {
         tl.to(diverRef.current, {
             x: '30vw',
             y: '-25vh',
-            rotation: 40,
             ease: 'sine.inOut',
             opacity: 1,
             duration: .5
         })
             .to(diverRef.current, {
+                rotation: -30,
+                ease: 'sine.inOut',
+                duration: .25
+            }, "<")
+            .to(diverRef.current, {
+                rotation: 40,
+                ease: 'sine.inOut',
+                duration: .25
+            }, "<.25")
+            .to(diverRef.current, {
                 rotation: 90,
                 ease: 'sine.inOut',
-                duration: .6
-            })
+                duration: .25
+            }, "+=.05")
             // 2. Sola geri sallanma
             .to(diverRef.current, {
-                x: '0vw',
+                x: '1.2vw',
                 ease: 'sine.inOut',
                 duration: .4
-            }, "-=.5")
+            }, "<.05")
+            .to(diverRef.current, {
+                rotation: 50,
+                ease: 'sine.inOut',
+                duration: .15
+            }, "<.25")
             // 4. Son olarak uzağa sola kayma
             .to(diverRef.current, {
-                x: '0vw',
+                x: '1.2vw',
                 rotation: -60,
                 ease: 'sine.in',
                 duration: 1
