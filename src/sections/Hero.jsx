@@ -55,7 +55,7 @@ const Hero = () => {
                     ref={subRef}
                     className="text-lg md:text-2xl text-text-light max-w-2xl font-light tracking-wide leading-relaxed"
                 >
-                    Sürdürülebilir deniz ürünlerinin saf kalitesini keşfedin; en soğuk ve en temiz sulardan hasat edilir.
+                    Sürdürülebilir midyenin saf kalitesini keşfedin; en temiz sulardan hasat edilir.
                 </p>
 
                 {/* Kaydırma Göstergesi */}

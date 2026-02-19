@@ -30,10 +30,10 @@ const About = () => {
                 <div className="md:w-1/2" ref={contentRef}>
                     <h4 className="text-sky-400 font-bold tracking-widest mb-2">HİKAYEMİZ</h4>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                        Denizin <br />Hakkımızda, misyonumuz ve vizyonumuz, çiftliklerimiz, iletişim, merak edilenler?
+                        Denizden Sofralarınıza
                     </h2>
                     <p className="text-text-light text-lg mb-6 leading-relaxed">
-                        2020 yılında kurulan Anadolu Su Ürünleri, sürdürülebilir midye uygulamalarında öncü olmuştur. En iyi deniz ürünlerinin okyanusa saygılı bir ilişkiyle elde edildiğine inanıyoruz.
+                        Anadolu Su Ürünleri, denizin kalbinde başlayan lezzet yolculuğunu, en taze haliyle sofralarınıza ulaştırıyor. Sürdürülebilir üretim tekniklerimiz ve doğaya olan bağlılığımızla, midye yetiştiriciliğinde kaliteyi yeniden tanımlıyoruz. Modern tesislerimiz ve uzman ekibimizle; taze, sağlıklı ve güvenilir deniz lezzetleri için durmaksızın üretiyoruz.
                     </p>
                     <p className="text-text-light leading-relaxed mb-8">
                         Filomuz deniz ekosistemi üzerinde en az etkiyi yaratacak şekilde çalışır; böylece gelecek nesiller de aynı zenginlikten faydalanmaya devam edebilir.
@@ -59,13 +59,12 @@ const About = () => {
                         <h3 className="text-2xl text-white font-bold mb-6 text-center">Taahhüdümüz</h3>
                         <ul className="space-y-4">
                             {[
-                                'Deniz Yönetimi Konseyi (MSC) Sertifikalı',
-                                'Sıfır Atık İşleme Tesisleri',
-                                'Karbon Nötr Lojistik Zinciri',
-                                'Yerel Balıkçı Topluluklarını Destekleme'
+                                'Sıfır Taviz Hijyen',
+                                'Sürdürülebilir Ekosistem',
+                                'Tam İzlenebilirlik',
                             ].map((item, i) => (
-                                <li key={i} className="flex items-center gap-4 text-text-light">
-                                    <div className="w-2 h-2 bg-backgroundMain-500 rounded-full shadow-[0_0_10px_rgba(37,144,205,1)]"></div>
+                                <li key={i} className="flex items-center font-bold tracking-wider gap-4 text-text-light">
+                                    <div className="w-2 h-2 bg-backgroundMain-500  rounded-full shadow-[0_0_10px_rgba(37,144,205,1)]"></div>
                                     {item}
                                 </li>
                             ))}

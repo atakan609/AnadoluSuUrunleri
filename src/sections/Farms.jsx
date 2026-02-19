@@ -5,9 +5,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const farms = [
-    { name: 'Ege Açık Deniz Çiftliği', desc: 'Doğal akıntı bölgelerinde sürdürülebilir üretim.', image: 'farm1.png' },
-    { name: 'Marmara İç Körfez', desc: 'Kıyı dostu, düşük etki yetiştiricilik.', image: 'farm2.png' },
-    { name: 'Karadeniz Fidanlığı', desc: 'Genetik çeşitliliğe önem veren alan.', image: 'farm3.png' }
+    { name: 'Ürünlerimiz', desc: 'Kıyı dostu, düşük etki yetiştiricilik.', image: 'farm2.png' },
+    { name: 'Teknemiz', desc: 'Geniş filomuz ile sürdürülebilir üretim.', image: 'tekne.jpeg' },
+    { name: 'Bandırma Çiftiğimiz', desc: 'Kıyı dostu, düşük etki yetiştiricilik.', image: 'farm3.png' }
 ];
 
 const Farms = () => {
@@ -31,7 +31,7 @@ const Farms = () => {
         <section id="ciftlikler" className="py-32 relative">
             <div className="container mx-auto px-6 relative z-30" ref={ref}>
                 <h4 className="text-sky-400 font-bold uppercase tracking-widest mb-2">Saha Ağı</h4>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Çiftliklerimiz</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Çiftliğimiz</h2>
 
                 <div className="grid md:grid-cols-3 gap-6 overflow-hidden">
                     {farms.map((f, i) => (
@@ -42,7 +42,7 @@ const Farms = () => {
                                 className="w-full h-64 object-cover transition-all duration-500 ease-out group-hover:h-full group-hover:absolute group-hover:inset-0 group-hover:z-0"
                             />
                             <div className="p-5 relative z-10 transition-all duration-300">
-                                <h3 className="text-lg font-semibold text-white tracking-wide text-outline-strong mb-2">{f.name}</h3>
+                                <h3 className="text-lg font-semibold text-white tracking-wider text-outline-strong mb-2">{f.name}</h3>
                                 <p className="text-text-light text-sm group-hover:hidden">{f.desc}</p>
                             </div>
                         </div>

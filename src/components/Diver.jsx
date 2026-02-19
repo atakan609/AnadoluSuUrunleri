@@ -43,21 +43,21 @@ const Diver = () => {
                 duration: .25
             }, "<.25")
             .to(diverRef.current, {
-                rotation: 90,
+                rotation: 100,
                 ease: 'sine.inOut',
-                duration: .25
+                duration: .2
             }, "+=.05")
             // 2. Sola geri sallanma
             .to(diverRef.current, {
                 x: '1.2vw',
                 ease: 'sine.inOut',
-                duration: .4
+                duration: .3
             }, "<.05")
             .to(diverRef.current, {
                 rotation: 50,
                 ease: 'sine.inOut',
                 duration: .15
-            }, "<.25")
+            }, "<.15")
             // 4. Son olarak uzağa sola kayma
             .to(diverRef.current, {
                 x: '1.2vw',
@@ -75,7 +75,7 @@ const Diver = () => {
             {/* Dalgıç görünüm penceresine göre hareket eder ancak kaydırma ile kontrol edilir */}
             <div
                 ref={diverRef}
-                className="absolute top-[60%] left-[32vw] w-[32rem] md:w-[40rem] opacity-100 mix-blend-normal pointer-events-none"
+                className="absolute top-[60%] left-[32vw] w-[32rem] md:w-[40rem] opacity-0 mix-blend-normal pointer-events-none"
             >
                 <img src={`${import.meta.env.BASE_URL}images/diver.png`} alt="Dalgıç" className="w-full brightness-90 contrast-110 transform rotate-90" />
 

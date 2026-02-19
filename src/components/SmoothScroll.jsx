@@ -14,6 +14,7 @@ const SmoothScroll = () => {
             mouseMultiplier: 1,
             smoothTouch: false,
             touchMultiplier: 2,
+            syncTouch: true,
         });
 
         window.lenis = lenis;
