@@ -34,11 +34,6 @@ const Diver = () => {
                 duration: .5
             })
                 .to(diverRef.current, {
-                    opacity: .5,
-                    ease: 'sine.inOut',
-                    duration: .25
-                }, "<")
-                .to(diverRef.current, {
                     rotation: -30,
                     ease: 'sine.inOut',
                     duration: .25
@@ -52,7 +47,7 @@ const Diver = () => {
                     rotation: 100,
                     ease: 'sine.inOut',
                     duration: .2
-                }, "+=.05")
+                }, "+=.03")
                 // 2. Sola geri sallanma
                 .to(diverRef.current, {
                     x: '1.2vw',
@@ -83,7 +78,7 @@ const Diver = () => {
             {/* Dalgıç görünüm penceresine göre hareket eder ancak kaydırma ile kontrol edilir */}
             <div
                 ref={diverRef}
-                className="hidden md:block absolute top-[82vh] left-[32vw] w-[32rem] md:w-[40rem] opacity-0 mix-blend-normal pointer-events-none"
+                className="hidden md:block absolute top-[81vh] left-[32vw] w-[32rem] md:w-[40rem] opacity-0 mix-blend-normal pointer-events-none"
             >
                 <img src={`${import.meta.env.BASE_URL}images/diver.png`} alt="Dalgıç" className="w-full brightness-90 contrast-110 transform rotate-90" />
 

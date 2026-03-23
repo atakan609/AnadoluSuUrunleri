@@ -69,8 +69,9 @@ const Navbar = () => {
                                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 rounded-full blur-lg" />
                             </div>
                         </div>
-                        <span className="text-sm font-bold text-backgroundMain-400 whitespace-nowrap text-outline-strong px-1.5 py-0.5 mb-[11px] -ml-1 relative z-20">
-                            Resif & Anadolu Su Ürünleri
+                        <span className="text-sm font-bold text-sky-400 whitespace-nowrap tracking-wide text-outline-strong px-1.5 py-0.5 mb-[12px] -ml-1 relative z-20">
+                            Resif & Anadolu
+                            <span className="text-sm font-bold text-white whitespace-nowrap text-outline "> Su Ürünleri</span>
                         </span>
 
                     </div>
