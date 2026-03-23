@@ -56,16 +56,18 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`fixed w-full z-50 transition-all overflow-hidden duration-300 ${scrolled ? 'backdrop-blur-md shadow-lg shadow-backgroundMain-400/30 py-4 bg-backgroundMain-400/30' : 'py-6'}`}>
+        <nav className={`fixed w-full z-50 transition-all overflow-hidden duration-300 ${scrolled ? 'backdrop-blur-md shadow-lg shadow-backgroundMain-400/30 py-1 bg-backgroundMain-400/30' : 'py-3'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <a href="#" className="flex items-center gap-3" onClick={(e) => handleNavClick(e, '#')}>
                     <div className="relative flex items-center">
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                            <div className="w-12 h-12 bg-cyan-600/20 rounded-full blur-xl" />
+                        <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ${scrolled ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                            {/* Arkadaki geniş parıltı */}
+                            <div className="w-20 h-20 bg-sky-500/70 rounded-full blur-2xl" />
+                            {/* Daha net merkez ışığı */}
+                            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 rounded-full blur-lg" />
                         </div>
-                        <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Anadolu Su Ürünleri" className="size-12 object-contain relative z-10" />
+                        <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Anadolu Su Ürünleri" className="size-24 object-contain relative z-10   " />
                     </div>
-                    <span className="text-3xl font-semibold text-sky-400 tracking-wider text-outline">Anadolu Su <span className="text-white">Ürünleri</span></span>
                 </a>
 
                 {/* Desktop Menu */}

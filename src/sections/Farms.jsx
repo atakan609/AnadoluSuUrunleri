@@ -5,9 +5,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const farms = [
-    { name: 'Ürünlerimiz', desc: 'Kıyı dostu, düşük etki yetiştiricilik.', image: 'farm2.png' },
-    { name: 'Teknemiz', desc: 'Geniş filomuz ile sürdürülebilir üretim.', image: 'tekne.jpeg' },
-    { name: 'Bandırma Çiftiğimiz', desc: 'Kıyı dostu, düşük etki yetiştiricilik.', image: 'farm3.png' }
+    { name: 'Ürünlerimiz', desc: 'Denizin kalbinden taze midye üretimi.', image: 'farm4.jpeg' },
+    { name: 'Teknelerimiz', desc: 'Modern filomuzla kesintisiz hasat.', image: 'tekne.jpeg' },
+    { name: 'Bandırma Çiftliğimiz', desc: 'Doğayla iç içe, sürdürülebilir yetiştiricilik.', image: 'farm3.png' }
 ];
 
 const Farms = () => {

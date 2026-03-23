@@ -36,8 +36,8 @@ const Hero = () => {
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                 style={{
                     backgroundImage: `url(${import.meta.env.BASE_URL}images/hero.png)`,
-                    maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%)',
-                    WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)'
+                    maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%)',
+                    WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%)'
                 }}
             >
                 <div className="absolute inset-0 bg-backgroundMain-600/20 mix-blend-multiply"></div>
