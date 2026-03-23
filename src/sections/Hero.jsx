@@ -44,19 +44,8 @@ const Hero = () => {
             </div>
 
             {/* İçerik */}
-            <div className="relative z-30 container mx-auto h-full pt-40 flex flex-col justify-center items-center text-center">
-                <h1
-                    ref={textRef}
-                    className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 mt-8 md:mt-12 uppercase tracking-wider "
-                >
-                    <span className="text-sky-400">Anadolu Su</span><span className=" block md:inline"> Ürünlerİ</span>
-                </h1>
-                <p
-                    ref={subRef}
-                    className="text-lg md:text-2xl text-text-light max-w-2xl font-light tracking-wide leading-relaxed"
-                >
-                    Sürdürülebilir midyenin saf kalitesini keşfedin; en temiz sulardan hasat edilir.
-                </p>
+            <div className="relative z-30 container mx-auto h-full pt-30 flex flex-col justify-center items-center text-center">
+                {/* Metinler kaldırıldı - Şirket ismi Navbar logosunda yer alıyor */}
 
                 {/* Kaydırma Göstergesi */}
                 <div className="absolute bottom-10 animate-bounce">

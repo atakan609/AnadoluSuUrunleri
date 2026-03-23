@@ -34,7 +34,7 @@ const MissionVision = () => {
                     <div className="bg-navy-800 p-6 rounded-xl bg-navy-800/50 backdrop-blur-sm border border-navy-700">
                         <h3 className="text-xl font-semibold tracking-wider text-white mb-3">Misyonumuz</h3>
                         <p className="text-text-light leading-relaxed">
-                            Anadolu Su Ürünleri olarak, kaliteli ve sürdürülebilir midye üretimini
+                            Resif & Anadolu Su Ürünleri olarak, kaliteli ve sürdürülebilir midye üretimini
                             sağlarken deniz ekosistemini korumayı, ülke ekonomisini güçlendirmeyi ve
                             şeffaf tedarik zinciri sunmayı hedefliyoruz.
                         </p>

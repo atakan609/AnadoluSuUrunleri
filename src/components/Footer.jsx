@@ -39,7 +39,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="space-y-6">
                         <div className="flex items-center gap-2 text-lg font-bold text-cyan-600 tracking-wider">
-                            <span>ANADOLU SU<span className="text-white"> ÜRÜNLERİ</span></span>
+                            <span>RESİF & ANADOLU SU ÜRÜNLERİ<span className="text-white"> ORTAKLIĞI</span></span>
                         </div>
                         <p className="text-text-light leading-relaxed">
                             En taze ve sürdürülebilir deniz ürünlerini derin okyanustan doğrudan sofranıza getiriyoruz. Tadına varabileceğiniz kalite, güvenebileceğiniz dürüstlük.
@@ -73,7 +73,7 @@ const Footer = () => {
                         <ul className="space-y-4 text-text-light">
                             <li className="flex items-start gap-4">
                                 <MapPin className="text-sky-400 w-5 h-5 mt-1" />
-                                <span >Mersinli Mah. 1201/1 Sk. No:2/20 <br /> Su Plaza Kat: 5 D: 503 Konak/İzmir, Türkiye</span>
+                                <span >Mersinli Mah. 1201/1 Sk. No:2/20 <br /> Su Plaza No: 2 İç Kapı No: 20 Konak/İzmir, Türkiye</span>
                             </li>
                             <li className="flex items-center gap-4">
                                 <Phone className="text-sky-400 w-5 h-5" />
@@ -103,8 +103,8 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-navy-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-text-light text-sm">
-                        ©2020 Anadolu Midye ve Su Ürünleri A.Ş. tüm hakları saklıdır.
+                    <p className="text-text-light text-xs text-center md:text-left opacity-60">
+                        ©2026 Resif Su Ürünleri San. ve Tic. A.Ş. ve Anadolu Midye ve Su Ürün. Endüstri A.Ş Adi Ortaklığı. Tüm hakları saklıdır.
                     </p>
                 </div>
             </div>

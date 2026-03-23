@@ -33,7 +33,7 @@ const About = () => {
                         Denizden Sofralarınıza
                     </h2>
                     <p className="text-text-light text-lg mb-6 leading-relaxed">
-                        Anadolu Su Ürünleri, denizin kalbinde başlayan lezzet yolculuğunu, en taze haliyle sofralarınıza ulaştırıyor. Sürdürülebilir üretim tekniklerimiz ve doğaya olan bağlılığımızla, midye yetiştiriciliğinde kaliteyi yeniden tanımlıyoruz. Modern tesislerimiz ve uzman ekibimizle; taze, sağlıklı ve güvenilir deniz lezzetleri için durmaksızın üretiyoruz.
+                        Resif & Anadolu Su Ürünleri, denizin kalbinde başlayan lezzet yolculuğunu, en taze haliyle sofralarınıza ulaştırıyor. Sürdürülebilir üretim tekniklerimiz ve doğaya olan bağlılığımızla, midye yetiştiriciliğinde kaliteyi yeniden tanımlıyoruz. Modern tesislerimiz ve uzman ekibimizle; taze, sağlıklı ve güvenilir deniz lezzetleri için durmaksızın üretiyoruz.
                     </p>
                     <p className="text-text-light leading-relaxed mb-8">
                         Filomuz deniz ekosistemi üzerinde en az etkiyi yaratacak şekilde çalışır; böylece gelecek nesiller de aynı zenginlikten faydalanmaya devam edebilir.

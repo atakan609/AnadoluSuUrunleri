@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const farms = [
     { name: 'Ürünlerimiz', desc: 'Denizin kalbinden taze midye üretimi.', image: 'farm4.jpeg' },
-    { name: 'Teknelerimiz', desc: 'Modern filomuzla kesintisiz hasat.', image: 'tekne.jpeg' },
     { name: 'Bandırma Çiftliğimiz', desc: 'Doğayla iç içe, sürdürülebilir yetiştiricilik.', image: 'farm3.png' }
 ];
 
@@ -31,17 +30,17 @@ const Farms = () => {
         <section id="ciftlikler" className="py-32 relative">
             <div className="container mx-auto px-6 relative z-30" ref={ref}>
                 <h4 className="text-sky-400 font-bold uppercase tracking-widest mb-2">Saha Ağı</h4>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Çiftliğimiz</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-16">Çiftliğimiz</h2>
 
-                <div className="grid md:grid-cols-3 gap-6 overflow-hidden">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-full max-w-6xl mx-auto overflow-hidden">
                     {farms.map((f, i) => (
-                        <div key={i} className="farm-card backdrop-blur-sm bg-backgroundMain-700 rounded-lg border border-navy-700 overflow-hidden relative group cursor-pointer h-96">
+                        <div key={i} className="farm-card flex-1 backdrop-blur-sm bg-backgroundMain-700 rounded-lg border border-navy-700 overflow-hidden relative group cursor-pointer h-[500px] w-full max-w-2xl">
                             <img
                                 src={`${import.meta.env.BASE_URL}images/${f.image}`}
                                 alt={f.name}
-                                className="w-full h-64 object-cover transition-all duration-500 ease-out group-hover:h-full group-hover:absolute group-hover:inset-0 group-hover:z-0"
+                                className="w-full h-80 object-cover transition-all duration-500 ease-out group-hover:h-full group-hover:absolute group-hover:inset-0 group-hover:z-0"
                             />
-                            <div className="p-5 relative z-10 transition-all duration-300">
+                            <div className="p-6 relative z-10 transition-all duration-300">
                                 <h3 className="text-lg font-semibold text-white tracking-wider text-outline-strong mb-2">{f.name}</h3>
                                 <p className="text-text-light text-sm group-hover:hidden">{f.desc}</p>
                             </div>

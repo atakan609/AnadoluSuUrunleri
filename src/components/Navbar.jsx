@@ -58,15 +58,21 @@ const Navbar = () => {
     return (
         <nav className={`fixed w-full z-50 transition-all overflow-hidden duration-300 ${scrolled ? 'backdrop-blur-md shadow-lg shadow-backgroundMain-400/30 py-1 bg-backgroundMain-400/30' : 'py-3'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <a href="#" className="flex items-center gap-3" onClick={(e) => handleNavClick(e, '#')}>
-                    <div className="relative flex items-center">
-                        <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ${scrolled ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                            {/* Arkadaki geniş parıltı */}
-                            <div className="w-20 h-20 bg-sky-500/70 rounded-full blur-2xl" />
-                            {/* Daha net merkez ışığı */}
-                            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 rounded-full blur-lg" />
+                <a href="#" className="" onClick={(e) => handleNavClick(e, '#')}>
+                    <div className="relative flex items-end">
+                        <div className="relative">
+                            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Resif & Anadolu Su Ürünleri" className="size-24 object-contain relative z-10" />
+                            <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 z-0 ${scrolled ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                                {/* Arkadaki geniş parıltı */}
+                                <div className="w-20 h-20 bg-sky-500/80 rounded-full blur-2xl z-0" />
+                                {/* Daha net merkez ışığı */}
+                                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 rounded-full blur-lg" />
+                            </div>
                         </div>
-                        <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Anadolu Su Ürünleri" className="size-24 object-contain relative z-10   " />
+                        <span className="text-sm font-bold text-backgroundMain-400 whitespace-nowrap text-outline-strong px-1.5 py-0.5 mb-[11px] -ml-1 relative z-20">
+                            Resif & Anadolu Su Ürünleri
+                        </span>
+
                     </div>
                 </a>
 
